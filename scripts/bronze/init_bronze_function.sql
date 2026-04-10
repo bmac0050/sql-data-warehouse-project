@@ -1,3 +1,13 @@
+/*
+=======================================
+Create Bronze Schema
+=======================================
+
+Script Purpose:
+	This script creates tables in the bronze schema, dropping tables if they already exist.
+ 	Run this script to re-define the DDL structure of 'bronze' tables.
+ */
+
 CREATE OR REPLACE PROCEDURE bronze.init_bronze ()
 LANGUAGE plpgsql
 AS $$
