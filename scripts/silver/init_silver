@@ -26,14 +26,14 @@ BEGIN
 	
 	DROP TABLE IF EXISTS silver.CRM_PRD_INFO;
 	CREATE TABLE silver.crm_prd_info (
-		prd_id int4 NULL,
-		cat_id varchar(50) NULL,
-		prd_key varchar(50) NULL,
-		prd_nm varchar(50) NULL,
-		prd_cost int4 NULL,
-		prd_line varchar(50) NULL,
-		prd_start_dt date NULL,
-		prd_end_dt date NULL,
+		prd_id int4,
+		cat_id varchar(50),
+		prd_key varchar(50),
+		prd_nm varchar(50),
+		prd_cost int4,
+		prd_line varchar(50),
+		prd_start_dt date,
+		prd_end_dt date,
 		dwh_create_date timestamptz DEFAULT now() NULL
 	);
 	
